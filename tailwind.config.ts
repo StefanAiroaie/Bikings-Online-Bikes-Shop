@@ -7,11 +7,33 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "15px",
+    },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "960px",
+      xl: "1440px",
+    },
+    fontFamily: {
+      primary: "var(--font-JetBrainsMono)",
+    },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        primary: {
+          DEFAULT: "#1D1D1D",
+          hover: "#00000",
+        },
+        secondary: {
+          DEFAULT: "#F2EFEB",
+          hover: "#161617",
+        },
+        accent: {
+          DEFAULT: "#5D768A",
+          hover: "#A2C70E",
+        },
       },
     },
   },

@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/AddToCartBtn.jsx", "components/PopularProducts.jsx", "components/ProductCard.jsx", "components/PopularProductsCarousel.jsx", "components/Nav.jsx", "components/Header.jsx", "components/Footer.jsx", "components/CartSidebar.jsx", "components/CartProvider.jsx", "app/layout.jsx", "app/page.jsx", "app/product/[slug]/page.jsx", "lib/sanity.jsx", "lib/utils.js"],
   "exclude": ["node_modules"]
 }
