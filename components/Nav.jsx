@@ -7,7 +7,7 @@ const links = [
   { name: "Our Bikes", path: "/our-bikes" },
 ];
 
-const Nav = (containerStyles) => {
+const Nav = ({ containerStyles }) => {
   const pathname = usePathname();
   return (
     <nav className={`${containerStyles}`}>

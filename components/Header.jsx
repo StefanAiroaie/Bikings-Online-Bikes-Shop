@@ -7,7 +7,7 @@ import { CgShoppingBag } from "react-icons/cg";
 import { useShoppingCart } from "use-shopping-cart";
 
 const Header = () => {
-  //   const { cartCount, handleCartClick } = useShoppingCart();
+  const { cartCount, handleCartClick } = useShoppingCart();
   return (
     <header className="bg-white shadow-lg sticky top-0 py-8 z-40">
       <div className="container mx-auto flex justify-between items-center">
@@ -19,15 +19,15 @@ const Header = () => {
         <div className="flex items-center gap-[26px]">
           <Nav containerStyles="flex gap-[36px]" />
           <div
-          // onClick={() => handleCartClick()}
-          // className="relative cursor-pointer"
+            onClick={() => handleCartClick()}
+            className="relative cursor-pointer"
           >
-            {/* <CgShoppingBag className="text-[26px]" /> */}
+            <CgShoppingBag className="text-[26px]" />
             <div className="bg-accent w-[18px] h-[18px] absolute -right-1 -bottom-1 rounded-full text-white flex items-center justify-center text-sm font-medium">
-              {/* {cartCount} */}
+              {cartCount}
             </div>
           </div>
-          {/* <CartSidebar /> */}
+          <CartSidebar />
         </div>
       </div>
     </header>

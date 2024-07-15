@@ -37,7 +37,7 @@ const ProductDetails = async ({ params }) => {
           <div className="xl:flex-1 h-[460px] bg-primary/5 xl:w-[700px] xl:h-[540px] flex justify-center items-center">
             <Image
               src={urlFor(bike.images[0]).url()}
-              width={473}
+              width={800}
               height={290}
               priority
               alt=""
